@@ -1,4 +1,5 @@
 <?php
+$Progress = $_SESSION["Progress"];
 ?>
 
 <!doctype html>
@@ -17,23 +18,19 @@
     <link rel="stylesheet" href="/Assets/Css/Style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <title>AppreciRate About</title>
+    <title>AppreciRate</title>
 </head>
 <body class="fullscreen">
     <div class="container">
-        <form class="form-signin">
-            <img class="shadow mt-5 mb-5 rounded" src="/Assets/Img/Logo.jpg" alt="" width="150" height="150">
-            <h4 class=" mb-3">About us</h4>
-            <p class="mt-3 mb-3 text-muted">Close The Gap, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-                debitis iste laboriosam magnam maxime numquam, qui. Accusamus, aut cum dolorem ducimus ea eum hic id libero
-                mollitia, nemo pariatur porro!</p>
-
-            <h4 class=" mt-5">The Team Behind AppreciRate</h4>
-            <p class="mt-3 mb-3 text-muted">Close The Gap, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-                debitis iste laboriosam magnam maxime numquam, qui. Accusamus, aut cum dolorem ducimus ea eum hic id libero
-                mollitia, nemo pariatur porro!</p>
-
-            <p class="mt-5 mb-3 text-muted">© BeCode 2019</p>
+        <form class="text-center">
+            <header class="pt-5">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <?php echo $Progress ?>%;" aria-valuenow="5" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+                <img class="m-4" src="/Assets/Img/Logo.jpg" alt="" width="72" height="72">
+            </header>
         </form>
     </div>
 </body>
